@@ -96,7 +96,7 @@ class todo {
         category,
       }) => {
         const categoryData = this.categories.find(c => c.title === category)
-        const color = categoryData ? categoryData.color : '' // Если не нашли — пустой
+        const color = categoryData ? categoryData.color : ''
 
         return `
           <li class="todo__item todo-item"

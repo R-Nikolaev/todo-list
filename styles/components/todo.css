@@ -1,0 +1,123 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.todo__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-700);
+    height: 200px;
+    width: 100%;
+}
+
+.todo__title {
+    display: flex;
+    align-items: center;
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.todo__title-icon {
+    width: 22px;
+    height: 36px;
+    margin-right: 12px;
+}
+
+.todo__title-first-letter {
+    color: var(--color-blue);
+}
+
+.todo__title-second-letter {
+    color: var(--color-purple-dark);
+}
+
+.todo__title-section {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+    text-align: center;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.todo__form {
+    display: flex;
+    column-gap: 8px;
+}
+
+.todo__select {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 3;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.todo__field {
+    width: 100%;
+}
+
+.todo__category {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 10px;
+}
+
+.todo__category-item {
+    padding: 4px 8px;
+    color: var(--color-gray-200);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    &:hover,
+    &.is-active {
+        border: 1px solid var(--color-gray-100)
+    }
+}
+
+.todo__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.todo__total-tasks {
+    color: var(--color-blue);
+}
+
+.todo__complete-tasks {
+    color: var(--color-purple);
+}
+
+.todo__total-tasks,
+.todo__complete-tasks {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.todo__total-tasks span,
+.todo__complete-tasks span {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-gray-200);
+    padding: 2px 8px;
+    background-color: var(--color-gray-400);
+    border-radius: var(--border-radius-xxl);
+}
+
+.todo__list {
+    --todoListRowGap: 12px;
+
+    display: grid;
+    row-gap: var(--todoListRowGap);
+}
+
+.todo__item {
+    width: 100%;
+}

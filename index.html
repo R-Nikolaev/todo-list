@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width"
+  >
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge"
+  >
+  <link rel="stylesheet"
+        href="./styles/main.css"
+  >
+  <script src="main.js"
+          type="module"
+  ></script>
+  <title>ToDo</title>
+</head>
+<body>
+<div class="todo"
+     data-js-todo
+>
+  <div class="todo__header">
+    <h1 class="todo__title">
+      <span class="todo__title-icon">
+        <img src="./icons/rocket.svg"
+             alt=""
+             width="22"
+             height="36"
+        >
+      </span>
+      <span class="todo__title-first-letter">
+        to
+      </span>
+      <span class="todo__title-second-letter">
+        do
+      </span>
+    </h1>
+  </div>
+  <div class="todo__body">
+    <div class="container">
+      <h2 class="todo__title-section">
+        Add new
+      </h2>
+      <form class="todo__form form-add"
+            data-js-todo-new-task-form
+      >
+        <div class="todo__field field">
+          <label for="new-task"
+                 class="field__label"
+          >
+            Add new task
+          </label>
+          <input type="text"
+                 class="field__input"
+                 id="new-task"
+                 autocomplete="off"
+                 placeholder=" "
+                 data-js-todo-new-task-input
+          >
+        </div>
+        <button class="button"
+                type="submit"
+        >
+          Add
+          <svg width="16"
+               height="16"
+               viewBox="0 0 16 16"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_12771_89)">
+              <path d="M7.98324 1.45164C9.27516 1.45164 10.5381 1.83474 11.6123 2.5525C12.6865 3.27025 13.5237 4.29043 14.0181 5.48401C14.5125 6.6776 14.6419 7.99098 14.3898 9.25808C14.1378 10.5252 13.5157 11.6891 12.6021 12.6026C11.6886 13.5162 10.5247 14.1383 9.25759 14.3903C7.99048 14.6424 6.6771 14.513 5.48351 14.0186C4.28993 13.5242 3.26976 12.687 2.552 11.6128C1.83425 10.5386 1.45115 9.27566 1.45115 7.98374C1.45784 6.25338 2.14818 4.5958 3.37174 3.37224C4.5953 2.14868 6.25288 1.45833 7.98324 1.45164ZM7.98324 6.68116e-05C6.40562 0.00652074 4.86529 0.480235 3.55668 1.36141C2.24808 2.24258 1.22988 3.4917 0.630618 4.95108C0.0313578 6.41046 -0.122093 8.01468 0.189637 9.5612C0.501367 11.1077 1.2643 12.5272 2.38213 13.6405C3.49995 14.7538 4.92255 15.5109 6.47034 15.8163C8.01812 16.1217 9.62169 15.9617 11.0786 15.3565C12.5355 14.7513 13.7805 13.728 14.6563 12.4158C15.5321 11.1036 15.9996 9.56136 15.9996 7.98374C15.9996 6.93255 15.792 5.89171 15.3887 4.92096C14.9855 3.9502 14.3945 3.06863 13.6497 2.32685C12.9049 1.58507 12.0209 0.997679 11.0485 0.598388C10.0761 0.199097 9.03441 -0.00423349 7.98324 6.68116e-05Z"
+                    fill="#F2F2F2"
+              />
+              <path d="M11.7065 7.38153H8.49491V4.16992H7.41348V7.38153H4.19824V8.46296H7.41348V11.6746H8.49491V8.46296H11.7065V7.38153Z"
+                    fill="#F2F2F2"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_12771_89">
+                <rect width="16"
+                      height="16"
+                      fill="white"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </form>
+      <ul class="todo__category"
+          data-js-todo-category
+      >
+      </ul>
+      <h2 class="todo__title-section">
+        Search
+      </h2>
+      <form class="todo__form form-search"
+            data-js-todo-search-task-form
+      >
+        <div class="todo__field field field-search">
+          <label for="search-task"
+                 class="field__label"
+          >
+            Search task
+          </label>
+          <input type="search"
+                 class="field__input"
+                 id="search-task"
+                 autocomplete="off"
+                 placeholder=" "
+                 data-js-todo-search-task-input
+          >
+        </div>
+        <div class="todo__select">
+          <label class="field__label-select"
+                 for="search-category"
+          >
+            Filter by category
+          </label>
+
+          <select class="field__select"
+                  id="search-category"
+                  data-js-todo-search-task-select
+          >
+          </select>
+        </div>
+      </form>
+      <div class="todo__info">
+        <b class="todo__total-tasks">
+          Tasks created
+          <span data-js-todo-total-tasks>
+          0
+        </span>
+        </b>
+        <b class="todo__complete-tasks">
+          Tasks complete
+          <span data-js-todo-complete-tasks>
+          0
+        </span>
+        </b>
+      </div>
+      <ul class="todo__list"
+          data-js-todo-list
+      >
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--color-gray-600);
+}
+
+input,
+label,
+button {
+    transition-duration: var(--transition-duration);
+}
+
+:focus-visible {
+    outline: dashed 2px var(--color-blue-dark);
+    outline-offset: 4px;
+    transition-duration: 0s !important;
+}
+
+.container {
+    padding-inline: 350px;
+}

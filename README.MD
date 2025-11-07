@@ -24,6 +24,6 @@
 - Нормализация данных
 
 ## Демо
-[Demo](https://r-nikolaev.github.io/todo-list/)
+[Перейти на gitPage](https://r-nikolaev.github.io/todo-list/)
 
 ![Screenshot](./todo.png)
